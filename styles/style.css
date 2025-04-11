@@ -1,1 +1,131 @@
-/* место для вашего кода */
+.cover {
+    position: relative;
+    z-index: 0;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lots {
+    padding: 180px 24px 120px 24px;
+    background-color: blue;
+}
+
+.about {
+    padding: 120px 24px 180px 24px;
+    background-color: green;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-template-areas: "navigation logo address";
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 96px;
+    padding-top: 95px;
+}
+
+.header__logo{
+    grid-area: logo;
+    display: block;
+    width: 148px;
+    height: 105px;
+}
+
+.header__menu{
+    grid-area: navigation;
+    display: flexbox;
+    flex-wrap: nowrap;
+    align-content: center;
+    font: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__links-list{
+    list-style-type: circle;
+    display: grid;
+    display: flex;
+    gap: 32px;
+}
+
+.header__links-list-item_no-bullit{
+    list-style-type: none;
+}
+
+address {
+    all: unset;
+    grid-area: address;
+    max-width: 240px;
+    justify-self: end;
+    font: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+h1 {
+    font: Raleway;
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.3em;
+}
+
+.title{
+    padding: 165px 50px 207px 50px;
+}
+
+.first__word{
+    display: flex;
+    justify-self: start;
+    align-self: start;
+}
+.second__word{
+    display: flex;
+    justify-content: center;
+}
+
+.third__word{
+    display: flex;
+    justify-self: end;
+    align-self: end;
+}
+
+.subline{
+    font: Raleway;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    word-spacing: 20.7px;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    font: Raleway;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 12px 32px 11px 31px;
+}
+
+.description{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-bottom: 61px;
+    padding-right: 50px;
+}
