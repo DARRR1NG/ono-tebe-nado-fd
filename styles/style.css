@@ -33,6 +33,7 @@ address {
     font: Raleway;
     font-size: 18px;
     font-weight: 400;
+    line-height: 24.3px;
 }
 
 .all__address{
@@ -50,6 +51,11 @@ address {
 
 .header__links-list-item_no-bullit{
     list-style-type: none;
+}
+
+.link__nowhere{
+    text-decoration: none;
+    border-bottom: 1px solid black;
 }
 
 .cover {
@@ -145,7 +151,6 @@ button {
 
 .lots {
     padding: 180px 24px 120px 24px;
-    background-color: blue;
 }
 
 .about {
@@ -156,6 +161,9 @@ button {
 .card {
     width: 334px;
     min-height: 596px;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px 48px 40px;
 }
 
 .name__lots {
@@ -163,14 +171,61 @@ button {
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
-    color: white;
+    color: black;
+    padding-bottom: 27px;
+    padding-left: 40px;
 }
 
 .card__name {
+    font-weight: 700;
     height: 100%;
+    font-size: 22px;
+    text-decoration: underline;
+    color: white;
+    text-transform: uppercase;
+    line-height: 120%;
 }
 
-.article {
+article {
     list-style: none;
-    height: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    line-height: 120%;
 }
+
+.cards{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.card__film{
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card__book{
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card__image{
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.more{
+    font-weight: 400;
+    font-size: 20px;
+    font: Raleway;
+    border-bottom: 1px solid black;
+}
+
+.look__more{
+    padding: 30px 102px 0px 40px;
+}
+
