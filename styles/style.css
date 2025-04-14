@@ -223,8 +223,10 @@ article {
 }
 
 .about {
-    padding: 120px 24px 180px 24px;
-    display: flex;
+    padding: 120px 24px 103px 24px;
+    display: grid;
+    grid-template-rows: min-content auto;
+    grid-template-areas: "black-logo about-text";
     gap: 72px;
 }
 
@@ -235,8 +237,9 @@ article {
 }
 
 .about__logo {
+    grid: black-logo;
     background-color: black;
-    min-width: 240px;
+    width: 240px;
     height: 240px;
     border-radius: 50%;
     display: flex;
@@ -244,7 +247,12 @@ article {
     margin: 35px 0px 0px 47px;
 }
 
-.about__block {
+.about__blocks {
+    padding-top: 140px;
+}
+
+.about__text {
+    grid-area: about-text;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -255,8 +263,11 @@ article {
     font-size: 40px;
     line-height: 100%;
     text-transform: uppercase;
-    padding-top: 140px;
-    padding-bottom: 100px;
+    padding-bottom: 103px;
+}
+
+.about__block {
+    
 }
 
 .about__block-1 {
