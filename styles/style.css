@@ -62,9 +62,7 @@ address {
     background-size: cover;
     background-position: center;
     display: flex;
-    
 }
-
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.6);
@@ -86,6 +84,7 @@ h1 {
 
 .title {
     padding: 165px 50px 50px 50px;
+    z-index: 1;
 }
 
 .first__word {
