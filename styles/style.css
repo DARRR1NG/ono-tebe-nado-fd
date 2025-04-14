@@ -120,9 +120,7 @@ h1 {
 
 button {
     background: none;
-    border: none;
     cursor: pointer;
-    background: transparent;
     border: 1px solid white;
     padding: 12px 32px 11px 31px;
 }
@@ -273,7 +271,7 @@ footer {
     padding: 0px 50px 82px 50px;
 }
 
-.footer__address{
+.footer__address {
     grid-area: footer-address;
     font-size: 18px;
     font-weight: 400;
@@ -287,7 +285,7 @@ footer {
     justify-content: center;
 }
 
-.socials{
+.socials {
     grid-area: social;
     width: 48px;
     display: flex;
