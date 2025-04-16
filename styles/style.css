@@ -326,3 +326,7 @@ footer {
     display: flex;
     gap: 48px;
 }
+
+.social-image {
+    width: 48px;
+}
