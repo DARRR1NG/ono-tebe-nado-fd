@@ -1,7 +1,7 @@
 header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    grid-template-areas: "navigation logo address";
+    grid-template-areas: "navigation logo header-address";
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -25,20 +25,19 @@ header {
     line-height: 24.3px;
 }
 
-address {
+.address {
     all: unset;
-    grid-area: address;
     max-width: 240px;
-    justify-self: end;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
+    font-style: normal;
 }
 
-.all__address {
-    height: 98px;
-    width: 240px;
-    align-content: center;
+.header__address {
+    grid-area: header-address;
+    display: flex;
+    padding-left: 191px;
 }
 
 .header__links-list {
@@ -52,6 +51,11 @@ address {
 }
 
 .link__nowhere {
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+.address__link {
     text-decoration: none;
     border-bottom: 1px solid black;
 }
@@ -157,6 +161,8 @@ address {
     min-height: 596px;
     display: flex;
     position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-link {
@@ -194,6 +200,7 @@ article {
     padding: 48px 40px 48px 40px;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .cards {
@@ -201,24 +208,19 @@ article {
     list-style: none;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 25px;
 }
 
 .card__film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card__book {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card__image {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .more {
@@ -257,7 +259,10 @@ article {
 }
 
 .about__blocks {
+    display: flex;
+    flex-direction: column;
     padding-top: 140px;
+    gap: 24px;
 }
 
 .about__text {
@@ -272,11 +277,7 @@ article {
     font-size: 40px;
     line-height: 100%;
     text-transform: uppercase;
-    padding-bottom: 103px;
-}
-
-.about__block-paragraph {
-    padding-bottom: 24px;
+    padding-bottom: 78px;
 }
 
 footer {
@@ -289,10 +290,7 @@ footer {
 
 .footer__address {
     grid-area: footer-address;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.3px;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 .footer__navigation {
@@ -303,13 +301,11 @@ footer {
 
 .socials {
     grid-area: social;
-    width: 48px;
     display: flex;
-    gap: 48px;
-    justify-self: center;
-    align-self: start;
-    margin-right: 100px;
-    margin-top: 5px;
+    width: 240px;
+    align-self: flex-start;
+    justify-self: end;
+    padding-top: 6px;
 }
 
 .footer__links-list-item_no-bullit {
@@ -321,21 +317,12 @@ footer {
     font-weight: 400;
     font-size: 18px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.footer__main {
+.socials-list {
     display: flex;
-    justify-content: center;
-}
-
-.footer__lots {
-    display: flex;
-    justify-content: center;
-}
-
-.footer__about {
-    display: flex;
-    justify-content: center;
-    margin-left: 22px;
-    margin-right: 22px;
+    gap: 48px;
 }
