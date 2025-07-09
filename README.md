@@ -1,1 +1,1 @@
-https://github.com/DARRR1NG/ono-tebe-nado-fd
+https://darrr1ng.github.io/ono-tebe-nado-fd/
